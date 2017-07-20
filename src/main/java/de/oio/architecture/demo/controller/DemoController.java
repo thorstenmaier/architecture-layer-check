@@ -8,4 +8,8 @@ public class DemoController {
 
 	@Autowired
 	private DemoService demoService;
+
+	public void doSomethingInController() {
+
+	}
 }

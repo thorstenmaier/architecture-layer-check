@@ -9,4 +9,8 @@ public class DemoServiceImpl implements DemoService {
 	@Autowired
 	private DemoController demoController; // not allowed!
 
+	public void doSomethingInService() {
+		demoController.doSomethingInController();
+	}
+
 }
