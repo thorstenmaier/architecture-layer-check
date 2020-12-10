@@ -1,15 +1,11 @@
-package de.oio.architecture;
-
-import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
-
-import org.junit.runner.RunWith;
+package com.trivadis.architecture;
 
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
-import com.tngtech.archunit.junit.ArchUnitRunner;
 import com.tngtech.archunit.lang.ArchRule;
 
-@RunWith(ArchUnitRunner.class)
+import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
+
 @AnalyzeClasses(packages = "de.oio.architecture")
 public class ArchUnitTest {
 

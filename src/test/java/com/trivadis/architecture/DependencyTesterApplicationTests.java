@@ -1,17 +1,15 @@
-package de.oio.architecture;
+package com.trivadis.architecture;
 
-import static org.junit.Assert.assertFalse;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = DepencencyTesterApplication.class)
-public class SpringDependencyTest {
+import static org.springframework.test.util.AssertionErrors.assertFalse;
+
+@SpringBootTest
+public class DependencyTesterApplicationTests {
 
 	@Autowired
 	private DefaultListableBeanFactory beanFactory;

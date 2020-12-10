@@ -1,8 +1,7 @@
-package de.oio.architecture.demo.controller;
+package com.trivadis.architecture.demo.controller;
 
+import com.trivadis.architecture.demo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import de.oio.architecture.demo.service.DemoService;
 
 public class DemoController {
 
